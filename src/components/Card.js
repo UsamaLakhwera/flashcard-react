@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function Card({id, front, back}) {
+export default function Card({ id, front, back }) {
 
     return (
-       <div className="card-holder">
+        <div className="card-holder">
             <div className="card">
                 <div className="front">
                     <p>{id}</p>
@@ -13,6 +13,6 @@ export default function Card({id, front, back}) {
                     <p>{back}</p>
                 </div>
             </div>
-       </div>
+        </div>
     )
 }

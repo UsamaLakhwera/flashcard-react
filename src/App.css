@@ -9,8 +9,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 0 3px 2px rgba(0,0,0,0.3);
-  background-color: white;
+  box-shadow: 0 0 3px 2px var(--box-shadow-color);
+  background-color: var(--primary-background-color);
   height: 300px;
   width: 300px;
   transform: rotateY(var(--rotate-y, 0));
@@ -23,13 +23,14 @@
 .card:hover {
   --translate-y: -2px;
   --rotate-y: 180deg;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  box-shadow: 0 0 5px 2px var(--hover-box-shadow-color);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   padding: 1rem;
-  color: black;
+  color: var(--secondary-color);
   backface-visibility: hidden;
   transform: rotateX(0deg)
 }
@@ -47,8 +48,8 @@
 }
 
 .front p:first-child {
-  background-color: green;
-  color: white;
+  background-color: var(--secondary-background-color);
+  color: var(--text-color);
   width: 50px;
   border-radius: 50px;
   font-size: 20px;
@@ -71,6 +72,53 @@
   text-align: center;
 }
 
-.prev-next-btns{
+.prev-next-btns {
+  color: var(--text-color);
+  transition: 1500ms;
+}
+
+.prev-btn {
+  background-color: var(--prev-btn-color);
   color: white;
+  transition: 1500ms;
+}
+
+.next-btn {
+  background-color: var(--next-btn-color);
+  color: white;
+  transition: 1500ms;
+}
+
+.header-btns {
+  color: var(--header-text-color);
+  transition: 1500ms;
+}
+
+.NavBar {
+  background-color: var(--navBar-bg-color);
+  transition: 1500ms;
+}
+
+.main-wrapper {
+  background-color: var(--body-bcakground-color);
+  transition: 1500ms;
+  height: 100vh
+}
+
+.dark-mode-btn {
+  background-color: var(--dark-mode-btn-bg-color);
+  color: var(--dark-mode-btn-text-color);
+  width: 170px;
+  height: 50px;
+  transition: 1500ms;
+}
+
+.dark-mode-btn:hover {
+  background-color: var(--dark-mode-btn-bg-color);
+  color: var(--dark-mode-btn-text-color)
+}
+
+.dark-mode-btn img {
+  height: 30px;
+  width: 30px
 }

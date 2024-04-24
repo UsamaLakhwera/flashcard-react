@@ -5,5 +5,37 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(204, 248, 204) !important;
+  /* background-color: rgb(204, 248, 204) !important; */
+}
+
+:root {
+  --primary-background-color: white;
+  --secondary-background-color: green;
+  --box-shadow-color: rgba(0, 0, 0, 0.3);
+  --hover-box-shadow-color: rgba(0, 0, 0, .5);
+  --text-color: white;
+  --body-bcakground-color: rgb(204, 248, 204);
+  --secondary-color: black;
+  --header-text-color: black;
+  --dark-mode-btn-bg-color: black;
+  --dark-mode-btn-text-color: white;
+  --prev-btn-color: #fbc005;
+  --next-btn-color: #438854;
+  --navBar-bg-color: white;
+}
+
+[data-theme="dark"] {
+  --primary-background-color: black;
+  --secondary-background-color: hsl(151, 67%, 20%);
+  --box-shadow-color: rgba(255, 255, 255, 0.3);
+  --hover-box-shadow-color: rgba(255, 255, 255, .5);
+
+  --secondary-color: white;
+  --body-bcakground-color: rgb(102, 124, 102);
+  --header-text-color: white;
+  --dark-mode-btn-bg-color: white;
+  --dark-mode-btn-text-color: black;
+  --prev-btn-color: hsl(45, 100%, 37%);
+  --next-btn-color: hsl(151, 63%, 16%);
+  --navBar-bg-color: #212529;
 }
